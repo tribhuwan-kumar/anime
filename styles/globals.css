@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #050f18;
+  color: #aca1b7;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height:100%;
+}
+
+@layer components {
+  .titles {
+    @apply mb-2 font-semibold text-cyan-500 text-lg
+  }
+  .social-media {
+    @apply w-8 h-8 flex justify-center items-center md:w-12 md:h-12
+  }
+  .social-container {
+    @apply hover:bg-amber-600 transition rounded-full mb-2
+  }
+  .hover-links {
+    @apply hover:text-emerald-400 transition
+  }
+  .select-option {
+   @apply rounded-lg bg-slate-200 text-blue-700 py-1 pl-2 outline-none sm:w-28 w-48 
+  }
+} 
